@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="ca4ad-components" />
+      <option name="name" value="ca4ad-components" />
+      <option name="url" value="https://daimler.pkgs.visualstudio.com/ADPOC/_packaging/ca4ad-components/maven/v1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="central" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="daimler-ca-olp-commons" />
+      <option name="name" value="daimler-ca-olp-commons" />
+      <option name="url" value="https://daimler.pkgs.visualstudio.com/ADPOC/_packaging/daimler-ca-olp-commons/maven/v1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ca4ad-commons" />
+      <option name="name" value="ca4ad-commons" />
+      <option name="url" value="https://daimler.pkgs.visualstudio.com/ADPOC/_packaging/ca4ad-commons/maven/v1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="ca4ad-central" />
+      <option name="name" value="ca4ad-central" />
+      <option name="url" value="https://daimler.pkgs.visualstudio.com/ADPOC/_packaging/ca4ad-central/maven/v1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="iam@Local" />
+      <option name="name" value="iam@Local" />
+      <option name="url" value="https://pkgs.dev.azure.com/daimler-mic/_packaging/iam@Local/maven/v1" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="dev-azure-com-daimler-mic-daivb" />
+      <option name="name" value="dev-azure-com-daimler-mic-daivb" />
+      <option name="url" value="https://pkgs.dev.azure.com/daimler-mic/_packaging/daivb/maven/v1" />
+    </remote-repository>
+  </component>
+</project>
