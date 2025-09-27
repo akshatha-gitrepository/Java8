@@ -1,14 +1,16 @@
-package java8.FI;
+package java8.fi;
 
 import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+import java8.fi.Student;
+import java8.fi.StudentDataBase;
 
 public class ConsumerEx {
 
     static Consumer<Student>  c1= p -> System.out.println(p);
 
-    static Consumer<Student>  c2= p -> System.out.print(p.getName().toUpperCase());
+    static Consumer<Student>  c2= p -> System.out.println(p.getName().toUpperCase());
 
     static Consumer<Student>  c3= p -> System.out.println(p.getActivities());
 
@@ -16,7 +18,7 @@ public class ConsumerEx {
         List<Student> stlist = StudentDataBase.getAllStudents();
         stlist.forEach(c1);
 
-        //stlist.forEach(c2.andThen(c3));
+        stlist.forEach(c2.andThen(c3));
 
         stlist.forEach(s->{
             if(s.getGradeLevel()>=3 && s.getGpa()>3.9){
@@ -46,7 +48,11 @@ public class ConsumerEx {
         };
 
         BiConsumer<Integer,Integer> division = (a,b)->{
-            System.out.println("Division is :" + (a/b));
+            if (b == 0) {
+                System.out.println("Division is : undefined (division by zero)");
+            } else {
+                System.out.println("Division is :" + (a/b));
+            }
         };
 
         multiply.andThen(division).accept(6,3);
