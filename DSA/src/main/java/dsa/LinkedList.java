@@ -1,7 +1,4 @@
-package SparkCourse;
-
-
-import org.w3c.dom.ls.LSOutput;
+package dsa;
 
 public class LinkedList {
     private Node head;
@@ -27,9 +24,21 @@ public class LinkedList {
     public void printList(){
         Node temp = head;
         while(temp!=null){
-            System.out.println(temp.value);
+            System.out.println("Conatains:" + temp.value);
             temp= temp.next;
         }
+    }
+
+    public void append(int value){
+        Node newNode = new Node(value);
+        if(length == 0){
+            this.head = newNode;
+            this.tail = newNode;
+        }else{
+            tail.next = newNode; // you have to consider assigning value of pointer also
+            this.tail = newNode;
+        }
+        length ++ ;
     }
 
     public void getHead(){
@@ -43,5 +52,6 @@ public class LinkedList {
     public void getLength(){
         System.out.println("Length :" + length);
     }
+
 
 }
