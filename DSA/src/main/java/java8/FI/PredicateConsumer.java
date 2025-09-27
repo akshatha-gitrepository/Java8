@@ -8,8 +8,8 @@ import java.util.function.Predicate;
 
 public class PredicateConsumer {
 
-    Predicate<Student> p1 = student -> student.getGpa()>=3.9;
-    Predicate<Student> p2 = student -> student.getGradeLevel()>=3;
+    static Predicate<Student> p1 = student -> student.getGpa()>=3.9;
+    static Predicate<Student> p2 = student -> student.getGradeLevel()>=3;
 
     BiConsumer<String, List<String>> studentBiConsumer = (n, a)-> System.out.println(n + ":" + a);
 
@@ -39,7 +39,5 @@ public class PredicateConsumer {
         new PredicateConsumer().printNameAndActivities(studentList);
 
     }
-
-
 
 }
