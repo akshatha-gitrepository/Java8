@@ -1,4 +1,4 @@
-package java8.FI;
+package java8.fi;
 
 import java.util.Arrays;
 import java.util.List;
