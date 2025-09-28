@@ -1,3 +1,5 @@
+package java8.fi;
+
 import java.util.function.Predicate;
 
 public class PredicateExample {
