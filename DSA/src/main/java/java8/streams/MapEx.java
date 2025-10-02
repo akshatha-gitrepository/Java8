@@ -1,0 +1,24 @@
+package java8.streams;
+
+import java8.fi.Student;
+import java8.fi.StudentDataBase;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
+
+public class MapEx {
+
+    public static List<String> studentNames(){
+
+        return StudentDataBase.getAllStudents()
+                .stream().map(Student::getName)
+                .collect(toList());
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(MapEx.studentNames());
+    }
+}
