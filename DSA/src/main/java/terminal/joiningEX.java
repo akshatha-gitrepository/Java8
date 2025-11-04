@@ -22,7 +22,7 @@ public class joiningEX {
     public static long count(){
         return StudentDataBase.getAllStudents()
                 .stream()
-                .collect(counting());
+                .collect(counting());// .count();
     }
 
     public static long countLong(){
