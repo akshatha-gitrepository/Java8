@@ -1,4 +1,4 @@
-package terminal;
+package java8.terminal;
 
 import java8.fi.Student;
 import java8.fi.StudentDataBase;

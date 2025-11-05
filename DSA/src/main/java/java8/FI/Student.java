@@ -2,6 +2,7 @@ package java8.fi;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
     private String name;
@@ -10,6 +11,15 @@ public class Student {
     private String gender;
     private int noteBooks;
     List<String> activities = new ArrayList<>();
+    private Optional<Bike> bike;
+
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
+    }
 
 
     public Student(String name, int gradeLevel, double gpa, String gender, int noteBooks,List<String> activities) {

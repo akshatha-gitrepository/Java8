@@ -2,8 +2,24 @@ package java8.fi;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Supplier;
 
 public class StudentDataBase {
+
+    public static Supplier<Student> studentSupplier = ()->{
+        return  new Student("Adam",2,4.0,"male", 2, Arrays.asList("swimming", "basketball","volleyball"));
+    };
+
+    public static Optional<Student> getOptionalStudent(){
+
+        Student student = new Student("Adam",2,4.0,"male", 5,Arrays.asList("swimming", "basketball","volleyball"));
+
+        Bike bike = new Bike("CD-100", "Honda");
+        student.setBike(Optional.of(bike));
+        return Optional.of(student);
+    }
+
     /**
      * Total of 6 students in the database.
      * @return
